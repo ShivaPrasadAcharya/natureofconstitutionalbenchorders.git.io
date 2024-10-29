@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <title>संवैधानिक इजलासका आदेशहरू</title>
+    <style>
+        /* Including the CSS directly to ensure it loads */
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>संवैधानिक इजलासका आदेशहरूको प्रकृति र दृष्टान्तहरू</h1>
+        
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="खोज्नुहोस्...">
+            <select id="filterType">
+                <option value="all">सबै प्रकृति</option>
+            </select>
+        </div>
+
+        <div class="table-container">
+            <table id="ordersTable">
+                <thead>
+                    <tr>
+                        <th>आदेशको प्रकृति</th>
+                        <th>निवेदक/विपक्षी</th>
+                        <th>मुद्दा नं.</th>
+                        <th>आदेश/फैसला मिति</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
