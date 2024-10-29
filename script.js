@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>${item.type}</td>
                 <td>${item.parties}</td>
                 <td>${item.caseNumber}</td>
+                <td>${item.remarks}</td>
                 <td>${item.date}</td>
             `;
             tableBody.appendChild(row);
