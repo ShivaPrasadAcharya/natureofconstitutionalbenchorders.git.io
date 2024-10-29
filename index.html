@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>संवैधानिक इजलासका आदेशहरू</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>संवैधानिक इजलासका आदेशहरूको प्रकृति र दृष्टान्तहरू</h1>
+        
+        <div class="search-section">
+            <div class="search-controls">
+                <input type="text" id="searchInput" placeholder="खोज्नुहोस्...">
+                <div class="highlight-toggle">
+                    <input type="checkbox" id="highlightToggle" checked>
+                    <label for="highlightToggle">खोजेको शब्द हाइलाइट गर्ने</label>
+                </div>
+            </div>
+            <select id="filterType">
+                <option value="all">सबै प्रकृति</option>
+            </select>
+            <button id="expandAllBtn" class="expand-all-btn">
+                <i class="fas fa-expand-alt"></i> सबै विस्तार गर्नुहोस्
+            </button>
+        </div>
+
+        <div class="table-wrapper">
+            <table id="ordersTable">
+                <thead>
+                    <tr>
+                        <th>आदेशको प्रकृति</th>
+                        <th>निवेदक/विपक्षी</th>
+                        <th>मुद्दा नं.</th>
+                        <th>आदेश/फैसला मिति</th>
+                        <th>विवरण</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

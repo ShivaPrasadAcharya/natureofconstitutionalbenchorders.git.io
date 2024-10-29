@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mukta', sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.search-section {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+input, select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Mukta', sans-serif;
+}
+
+#searchInput {
+  flex: 1;
+}
+
+.expand-all-btn {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.expand-all-btn:hover {
+  background-color: #45a049;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.details-cell {
+  position: relative;
+  cursor: pointer;
+}
+
+.details-preview {
+  max-height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+.details-full {
+  display: none;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.details-cell.expanded .details-preview {
+  display: none;
+}
+
+.details-cell.expanded .details-full {
+  display: block;
+}
+
+.expand-btn {
+  background: none;
+  border: none;
+  color: #0066cc;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px;
+  margin-top: 5px;
+}
+
+.expand-btn:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+  
+  .search-section {
+      flex-direction: column;
+  }
+  
+  table {
+      font-size: 14px;
+  }
+  
+  th, td {
+      padding: 8px;
+  }
+}
