@@ -1,4 +1,4 @@
-const ordersData = [
+const orders = [
     {
         type: "दरपीठ आदेश उपर सुनुवाई",
         parties: "ज्ञानेन्द्रराज आरण/राष्ट्रपतिको कार्यालय",
